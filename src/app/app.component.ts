@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   constructor(private helloService: HelloService) { }
 
   ngOnInit(): void {
+    console.log("Hello World-v2");
     this.helloService.getServerMessage().subscribe({
       next: data => {
         this.content = data;
